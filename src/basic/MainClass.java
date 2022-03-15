@@ -15,6 +15,17 @@ public class MainClass {
 		p2.eat();
 		p1.walk(23);
 		System.out.println(Person.count);
+		
+		developer devObj = new developer(13,"Vijendra");
+		devObj.walk();
+	}
+}
+class developer extends Person{
+	public developer(int age, String name) {
+		super(age,name);
+	}
+	void walk() { // Runtime polymorphism -> parent and child class contain the method with the same name and child class object is going to call child class methods
+		System.out.println("Developer "+ this.name + " is walking");
 	}
 }
 class Person{
