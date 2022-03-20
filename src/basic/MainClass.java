@@ -1,5 +1,7 @@
 package basic;
 
+import encapsulation.Encapsulation;
+
 public class MainClass {	
 	public static void main(String args[]) {
 		Person p1 = new Person();// Creating an object of a class.
@@ -18,6 +20,10 @@ public class MainClass {
 		
 		developer devObj = new developer(13,"Vijendra");
 		devObj.walk();
+		Encapsulation EpClass = new Encapsulation();
+		EpClass.doWork(); // As this is the public method in Encapsulation class this will work fine.
+		//EpClassdoWork1(); // As this is not a public method , So this will only be accessed inside the class.
+		
 	}
 }
 class developer extends Person{
