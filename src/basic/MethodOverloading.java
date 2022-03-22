@@ -31,9 +31,9 @@ public class MethodOverloading {
 		System.out.println("Sum methods with 3 arguments " + MethObj.sum(2,3,4));
 		
 		System.out.println("Sum methods with 2 arguments " + MethObj.sum(12.9, 11.9));
-		
-//		System.out.println(MethObj.add(1,2));
-//		System.out.println(MethObj.add(3,4));
+	// 	Here JVM will not able to determine which function to call so that why it is not possible.	
+	//	System.out.println(MethObj.add(1,2));
+	//	System.out.println(MethObj.add(3,4));
 		
 	}
 }
